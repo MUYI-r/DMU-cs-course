@@ -1,0 +1,3 @@
+/*删除部分订单记录*/
+DELETE FROM ORDERS
+WHERE CAST (O_ORDERDATE AS datetime)<2011-1-1

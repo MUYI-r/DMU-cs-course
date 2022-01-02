@@ -1,0 +1,5 @@
+/*把零件表的数据插入零件表中，多次重复执行，知道总记录数达到50万为止，记录下你执行了多少次？执行过程中你是如何保证实体完整性约束的？*/
+INSERT 
+INTO PART(P_PARTKEY,P_NAME,P_SIZE,P_RETAILPRICE)
+SELECT P_PARTKEY+(SELECT COUNT(*)FROM PART) ,P_NAME,P_SIZE,P_RETAILPRICE
+FROM PART
