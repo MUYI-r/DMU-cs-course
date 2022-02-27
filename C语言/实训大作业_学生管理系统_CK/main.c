@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Student.c" //引用自定义文件
+#include "Student.c" //????????????
 int main()
 {
 int id;
-memset(Head,0,sizeof(STU)*(N+1)); //清空数组缓存
-while(1) {                        //循环执行
+memset(Head,0,sizeof(STU)*(N+1)); //?????????
+while(1) {                        //??????
     menu();
     scanf("%d",&id);
-    switch(id) {                  //根据id选择操作
+    switch(id) {                  //????id??????
         case 1:
             Input(Head);
             break;
@@ -44,8 +44,8 @@ while(1) {                        //循环执行
             return 0;
             break;
         default:
-            printf("没有此功能!!!!\n");
-            system("cls");       //清屏
+            printf("????????!!!!\n");
+            system("cls");       //????
     }
   }
          return 0;
